@@ -40,20 +40,6 @@ p {
   font-size: 1.4rem;
 }
 
-.mobile {
-  /* 1. Hide it visually */
-  opacity: 0;
-
-  /* 2. Make it unaccessible to mouse and keyboard */
-  pointer-events: none;
-
-  /* 3. Hide from screen readers */
-  visibility: none;
-
-  /* 4. Remove */
-  display: none;
-}
-
 .container {
   background-color: var(--White);
   max-width: 60rem;
@@ -151,33 +137,12 @@ p {
 }
 
 /* MEDIA QUERY */
-/* Phones */
+/* Large Phones */
 /* 430px / 16px = 26.875em*/
 
 @media (max-width: 26.875em) {
   body {
     gap: 1rem;
-  }
-
-  .desktop {
-    /* 1. Hide it visually */
-    opacity: 0;
-
-    /* 2. Make it unaccessible to mouse and keyboard */
-    pointer-events: none;
-
-    /* 3. Hide from screen readers */
-    visibility: none;
-
-    /* 4. Remove */
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-    pointer-events: visible;
-    visibility: visible;
-    opacity: 1;
   }
 
   .container {
@@ -213,6 +178,7 @@ p {
   }
 }
 
+/* Medium Phones */
 /* 375px / 16px = 23.4375em */
 @media (max-width: 23.4375em) {
   p {
@@ -228,6 +194,7 @@ p {
   }
 }
 
+/* Small Phones */
 /* 320px / 16px = 20em */
 @media (max-width: 20em) {
   .container {

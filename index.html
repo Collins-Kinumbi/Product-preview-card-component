@@ -19,21 +19,14 @@
   <body>
     <main>
       <div class="container">
-        <!-- desktop product image -->
-        <div class="product-img">
-          <img
-            src="./images/image-product-desktop.jpg"
-            alt="perfume image"
-            class="desktop"
+        <picture class="product-img">
+          <source
+            media="(max-width: 26.875em )"
+            srcset="images\image-product-mobile.jpg"
           />
 
-          <!-- mobile product image -->
-          <img
-            src="./images/image-product-mobile.jpg"
-            alt="perfume image"
-            class="mobile"
-          />
-        </div>
+          <img src="./images/image-product-desktop.jpg" alt="Product image" />
+        </picture>
 
         <div class="product-information">
           <p class="product-type">Perfume</p>
